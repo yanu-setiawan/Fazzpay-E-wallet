@@ -217,4 +217,4 @@ function Register() {
   );
 }
 
-export default publicRoute(Register);
+export default Register;

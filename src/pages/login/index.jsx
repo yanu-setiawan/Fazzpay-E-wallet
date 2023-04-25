@@ -214,4 +214,4 @@ function Login() {
   );
 }
 
-export default publicRoute(Login);
+export default Login;
