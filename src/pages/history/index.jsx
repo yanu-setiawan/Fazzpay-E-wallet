@@ -62,7 +62,7 @@ function History() {
   }, [filter, metaPage]);
   return (
     <>
-      <Title title="hitory">
+      <Title title="History">
         <main>
           <Header />
           <section className=" bg-[#FAFCFF] gap-5 w-full flex-col lg:flex-row px-1 md:px-2 lg:px-[3.4rem] justify-between xl:px-[8.4rem] pb-8 pt-10 lg:py-10 flex">

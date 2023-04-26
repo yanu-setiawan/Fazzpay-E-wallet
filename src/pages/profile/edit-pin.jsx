@@ -24,8 +24,8 @@ function EditPin() {
   const [edit, setEdit] = useState(true);
   const controller = useMemo(() => new AbortController(), []);
   const userState = useSelector((state) => state.auth.data);
-  const token = userState.data.token;
-  const id = userState.data.id;
+  const token = userState.token;
+  const id = userState.id;
   const [isLoading, setLoading] = useState(false);
   // const [confirmPin, setConfirm] = useState(true);
   const [change, setChange] = useState(false);
@@ -46,7 +46,7 @@ function EditPin() {
 
         codeRef.current.retry();
 
-        swal("Success", result.data.msg, "success");
+        swal("Success", "Pin is correct, continue to the next step", "success");
       }
     } catch (error) {
       console.log(error);

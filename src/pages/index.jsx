@@ -174,7 +174,7 @@ function LandingPage() {
             <section className=" hidden lg:flex lg:w-[50%] xl:w-[40%]">
               <Image src={phoeDash} alt="phonedash" />
             </section>
-            <section className=" flex w-full lg:w-[50%]  xl:w-[60%] flex-col lg:gap-[1rem]  xl:gap-10 justify-center">
+            <section className=" flex w-full lg:w-[50%]  xl:w-[60%] flex-col lg:gap-[1rem] gap-7  xl:gap-10 justify-center">
               <div className=" text-4xl text-center lg:text-start  md:text-[2.75rem] lg:text-[2.5rem] xl:text-6xl font-extrabold text-dark leading-[3rem] md:leading-[4.2rem] xl:leading-[93px]  ">
                 <p>
                   All The <span className=" text-primary">Great</span> FazzPay

@@ -14,6 +14,7 @@ import swal from "sweetalert";
 import { forgot } from "utils/https/auth";
 import Title from "utils/wrapper/title";
 import privateRoute from "utils/wrapper/private";
+import publicRoute from "utils/wrapper/publicRoute";
 
 function Forgot() {
   const controller = useMemo(() => new AbortController(), []);
@@ -135,4 +136,4 @@ function Forgot() {
   );
 }
 
-export default privateRoute(Forgot);
+export default publicRoute(Forgot);

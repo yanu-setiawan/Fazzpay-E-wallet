@@ -165,7 +165,7 @@ function Home() {
                   <div className=" text-[#E0E0E0] text-lg ">
                     <p>Balance</p>
                   </div>
-                  <div className=" font-bold text-[2.5rem] text-white">
+                  <div className=" font-bold text-[1.5rem] md:text-[2.5rem] text-white">
                     <p>{rupiah(dataUser?.balance) || "Rp. 0"}</p>
                   </div>
                   <div className=" text-[#E0E0E0] text-base ">
@@ -219,7 +219,7 @@ function Home() {
                 </button>
               </div>
               <section className=" flex gap-6 flex-col lg:flex-row">
-                <section className=" lg:flex w-[50%] xl:w-[58%] hidden bg-white drop-shadow-lg px-8 flex-col py-9 rounded-3xl gap-28 justify-center  ">
+                <section className=" lg:flex w-full xl:w-[58%] flex bg-white drop-shadow-lg px-8 flex-col py-9 rounded-3xl gap-28 justify-center  ">
                   <div className="flex justify-between w-full ">
                     <div className="w-[60%] flex flex-col items-center">
                       <i className="bi bi-arrow-down text-green-500 text-3xl font-extrabold"></i>
@@ -236,7 +236,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className=" flex mt-auto">
+                  <div className=" hidden lg:flex ">
                     <Bar
                       data={data}
                       options={chartOptions}
