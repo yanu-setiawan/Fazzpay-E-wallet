@@ -174,12 +174,12 @@ function Detail() {
                     </label>
                     <input
                       type="text"
-                      className=" outline-none text-2xl font-bold text-dark bg-white w-full"
+                      className=" outline-none text-2xl font-bold text-dark bg-white w-full placeholder:text-lg"
                       placeholder="Your First Name"
                       disabled
                       value={
                         dataUser.noTelp === null
-                          ? "Phone number has not been added"
+                          ? "Phone number required"
                           : `${dataUser.noTelp}`
                       }
                     />

@@ -63,7 +63,7 @@ function EditPin() {
       const result = await changePin(id, token, newPin, controller);
       if (result.status && result.status === 200) {
         setLoading(false);
-        // swal("Success", result.data.msg, "success");
+        swal("Success", result.data.msg, "success");
         router.push("/profile");
         setLoading(false);
       }
@@ -110,7 +110,7 @@ function EditPin() {
                 <section className="flex flex-col">
                   <section className=" flex px-8 flex-col gap-6 mb-14">
                     <div className=" text-dark font-bold text-xl">
-                      <h3>Change Pin</h3>
+                      <h3>Check Pin</h3>
                     </div>
                     <div className=" text-greyFont text-base md:text-lg">
                       <p>

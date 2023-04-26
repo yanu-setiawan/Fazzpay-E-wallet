@@ -6,7 +6,7 @@ function CardContact({ userId, image, firstName, lastName, noTelp }) {
   const router = useRouter();
   return (
     <section
-      className=" flex gap-5 w-full shadow-md py-7 px-4 rounded-[20px] items-center bg-white cursor-pointer"
+      className=" flex gap-5 w-full shadow-md py-7 px-4 rounded-[20px] items-center bg-white cursor-pointer transition duration-150 hover:transition-transform hover:scale-105"
       onClick={() => {
         router.push(`/transfer/${userId}`);
       }}

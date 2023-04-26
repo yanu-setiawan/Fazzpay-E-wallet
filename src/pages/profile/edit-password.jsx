@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import { editPassword } from "utils/https/user";
 import Title from "utils/wrapper/title";
 import privateRoute from "utils/wrapper/private";
+import Loader from "components/base/Loader";
 
 function ChangePwd() {
   const router = useRouter();
@@ -54,6 +55,7 @@ function ChangePwd() {
         swal("Success", result.data.msg, "success");
         setLoading(false);
       }
+      router.push("/profile");
       return;
     } catch (error) {
       console.log(error);
@@ -66,6 +68,7 @@ function ChangePwd() {
 
   return (
     <>
+      {loading ? <Loader /> : <></>}
       <Title title="Edit Password">
         <Header />
         <main>

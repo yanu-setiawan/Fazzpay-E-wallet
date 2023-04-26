@@ -55,7 +55,8 @@ function Confirmation() {
         )
           .then((res) => {
             // console.log(res);
-            router.push("/transfer/succes");
+            // swal("Success", "Transfer Success", "success");
+            router.push("/transfer/success");
           })
           .catch((err) => {
             console.log(err);

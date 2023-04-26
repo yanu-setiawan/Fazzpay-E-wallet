@@ -69,12 +69,8 @@ function Register() {
         return router.push("/login");
       })
       .catch((err) => {
-        return swal(
-          "Failed",
-          err.response.data.msg,
-          "error"
-          // setIsLoading(false)
-        );
+        setIsLoading(false);
+        return swal("Failed", err.response.data.msg, "error");
       })
       .finally(() => {
         setIsLoading(false);
