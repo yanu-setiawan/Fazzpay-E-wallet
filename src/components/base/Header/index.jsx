@@ -176,11 +176,11 @@ function Header() {
                   <div className="flex items-center p-4 gap-3">
                     {data.type === "send" ? (
                       <div className=" text-4xl text-[#f70000] flex items-center">
-                        <i className="bi bi-arrow-down"></i>
+                        <i className="bi bi-arrow-up"></i>
                       </div>
                     ) : (
                       <div className=" text-4xl text-green-500 flex items-center">
-                        <i className="bi bi-arrow-up"></i>
+                        <i className="bi bi-arrow-down"></i>
                       </div>
                     )}
                     <div>
