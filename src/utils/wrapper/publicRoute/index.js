@@ -7,7 +7,7 @@ const publicRoute = (WrappedComponent) => {
   // console.log("WrappedComponent", WrappedComponent);
   const Auth = (props) => {
     const data = useSelector((state) => state.auth.data);
-    console.log(data);
+    // console.log(data);
     const router = useRouter();
 
     if (data.token) {
