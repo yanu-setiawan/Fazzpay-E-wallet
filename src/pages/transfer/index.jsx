@@ -57,7 +57,7 @@ function Transfer() {
           <section className=" md:bg-white lg:bg-[#FAFCFF] gap-5 w-full flex-col lg:flex-row px-4 md:px-2  lg:px-[3.4rem] xl:px-[8.4rem] pb-8 pt-10 lg:py-10 flex">
             <SideBar />
             <section className=" flex flex-col gap-5 w-full  lg:w-[75%] shadow md:shadow-md py-10 rounded-[1.3rem] pb-16">
-              <div className="h-[90vh] bg-white-primary rounded-lg px-8 py-4  ">
+              <div className="h-[100vh] bg-white-primary rounded-lg px-8 py-4  ">
                 <p className="font-bold text-xl text-dark">Search Receiver</p>
                 <div className="bg-[#3A3D421A] mt-8 rounded-lg flex gap-4 relative min-[100px]">
                   <i

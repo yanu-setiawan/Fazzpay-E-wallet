@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
 import { logout } from "utils/https/auth";
 import { authAction } from "redux/slices/auth";
+import { profileAction } from "redux/slices/profile";
 import Loader from "../Loader";
 
 function Logout({ isOpen, setIsOpen }) {
@@ -20,6 +21,7 @@ function Logout({ isOpen, setIsOpen }) {
       // console.log(result);
       if (result.status && result.status === 200) {
         dispatch(authAction.logoutRedux());
+        dispatch(profileAction.filter());
         setLoading(false);
         router.push("/");
       }

@@ -8,6 +8,7 @@ function SideBar() {
   const router = useRouter();
   const [modal, setModal] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const transferRegex = /^\/transfer(\/.*)?$/;
   const handleTopup = () => {
     setModal(true);
   };
@@ -36,10 +37,7 @@ function SideBar() {
         <Link
           href={"/transfer"}
           className={`flex gap-6 p-1 pl-8 cursor-pointer   hover:border-l-[5px] hover:border-primary ${
-            router.pathname === "/transfer" ||
-            router.pathname === "/transfer/confirmPin" ||
-            router.pathname === "/transfer/success" ||
-            router.pathname === "/transfer/failed"
+            transferRegex.test(router.pathname)
               ? " border-l-[5px] border-primary font-bold text-primary"
               : "text-greySecondary font-semibold"
           }`}

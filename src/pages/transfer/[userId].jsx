@@ -169,7 +169,7 @@ function Transfer() {
                         />
                       </div>
                     </div>
-                    <div className="mt-12 w-full flex gap-4 md:items-center md:justify-between md:mt-36">
+                    <div className="mt-12 w-full flex gap-4 md:items-center md:justify-between md:mt-[6rem]">
                       <button
                         className="btn py-4 bg-[#f70000] border-none text-white font-bold hover:bg-red-600 rounded-2xl w-40 "
                         onClick={() => {
