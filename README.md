@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="./public/fazzz.png" alt="Logo" width="80" height="80">
+    <img src="./public/payyy.png" alt="Logo" width="80" height="80">
   </a>
 
   <h2 align="center">FAZZPAY E-WALLET</h2>

@@ -7,7 +7,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
         ></link>
-        <link rel="icon" href="/fazzz.png" />
+        <link rel="icon" href="/payyy.png" />
       </Head>
       <body>
         <Main />
