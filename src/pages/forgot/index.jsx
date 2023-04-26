@@ -35,7 +35,14 @@ function Forgot() {
       return setInput(false), toast.error("Invalid email");
     setInput(true);
     setIsLoading(true);
-    forgot({ email, linkDirect: "http://localhost:3000/forgot" }, controller)
+    forgot(
+      {
+        email,
+        // linkDirect: "http://localhost:3000/forgot"
+        linkDirect: process.env.NEXT_PUBLIC_FORGOT_URL,
+      },
+      controller
+    )
       .then((res) => {
         console.log(res.data);
         swal("success", res.data.msg, "success");
