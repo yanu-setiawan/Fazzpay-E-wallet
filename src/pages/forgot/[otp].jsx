@@ -137,7 +137,7 @@ function UserId() {
                   id="newPassword"
                   onChange={onChangeForm}
                   type={`${iconEye1 ? "text" : "password"}`}
-                  className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
+                  className={`w-full border-b-2 border-solid text-dark  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
                   placeholder="Create New Password"
                 />
                 <i
@@ -156,7 +156,7 @@ function UserId() {
                   id="confirmPassword"
                   onChange={onChangeForm}
                   type={`${iconEye2 ? "text" : "password"}`}
-                  className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
+                  className={`w-full border-b-2 border-solid text-dark p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
                   placeholder="Create New Password"
                 />
                 <i
