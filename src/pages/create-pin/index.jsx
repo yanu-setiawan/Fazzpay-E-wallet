@@ -32,7 +32,7 @@ function CreatePin() {
     event.preventDefault();
     setisLoading(true);
     const sendPin = parseInt(getPin);
-    createPin(sendPin, userData.data.token, userData.data.id)
+    createPin(sendPin, userData.token, userData.id)
       .then(() => {
         router.push("/create-pin/pinSucces");
       })
