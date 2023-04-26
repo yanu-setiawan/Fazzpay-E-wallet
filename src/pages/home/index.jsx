@@ -165,9 +165,7 @@ function Home() {
                     <p>Balance</p>
                   </div>
                   <div className=" font-bold text-[2.5rem] text-white">
-                    <p>
-                      Rp.{dataUser.balance.toLocaleString("id-ID") || "Rp. 0"}
-                    </p>
+                    <p>{rupiah(dataUser.balance) || "Rp. 0"}</p>
                   </div>
                   <div className=" text-[#E0E0E0] text-base ">
                     <p>{dataUser.noTelp || "Phone Number required"}</p>
