@@ -5,23 +5,16 @@ import Loader from "components/base/Loader";
 
 const publicRoute = (WrappedComponent) => {
   const Auth = (props) => {
-    // const dataArray = useSelector(
-    //   (state) => state.auth.initialState.data.token
-    // );
-    const dataArray = useSelector((state) => state.auth.data);
-
-    console.log(dataArray);
+    const data = useSelector((state) => state.auth.data);
+    // console.log(data);
     const router = useRouter();
-    useEffect(() => {
-      if (dataArray) {
-        router.push("/home");
-      }
-    }, [dataArray, router]);
 
-    if (!dataArray || dataArray === null) {
+    if (data.token !== null) {
+      router.push("/home");
+      return <Loader />;
+    } else {
       return <WrappedComponent {...props} />;
     }
-    return <Loader />;
   };
 
   return Auth;
