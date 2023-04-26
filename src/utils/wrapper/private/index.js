@@ -9,7 +9,7 @@ const privateRoute = (WrappedComponent) => {
     console.log(dataArray);
     const router = useRouter();
     useEffect(() => {
-      if (!dataArray) {
+      if (!dataArray || dataArray === null) {
         router.push("/login");
       }
     }, [dataArray, router]);

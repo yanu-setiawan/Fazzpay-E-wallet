@@ -131,42 +131,42 @@ function Register() {
               onSubmit={registerHandler}
             >
               <div className="mb-8 flex gap-2 relative">
-                <i className="bi bi-person text-2xl absolute top-[10%] text-greythirty"></i>
+                <i className="bi bi-person text-2xl absolute top-[10%] text-greythirty focus:text-primary"></i>
                 <input
                   onChange={onChangeForm}
                   name="firstName"
                   type="text"
                   placeholder="Enter your firstname"
-                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%]"
+                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary"
                 />
               </div>
               <div className="mb-8 flex gap-2 relative">
-                <i className="bi bi-person text-2xl absolute top-[10%] text-greythirty"></i>
+                <i className="bi bi-person text-2xl absolute top-[10%] text-greythirty focus:text-primary"></i>
                 <input
                   onChange={onChangeForm}
                   name="lastName"
                   type="text"
                   placeholder="Enter your lastname"
-                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%]"
+                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary"
                 />
               </div>
               <div className="mb-8 flex gap-2 relative">
-                <i className="bi bi-envelope text-2xl absolute top-[10%] text-greythirty"></i>
+                <i className="bi bi-envelope text-2xl absolute top-[10%] text-greythirty focus:text-primary"></i>
                 <input
                   onChange={onChangeForm}
                   name="email"
                   type="text"
                   placeholder="Enter your email"
-                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%]"
+                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary"
                 />
               </div>
-              <div className="mb-6 flex gap-2 relative ">
-                <i className="bi bi-lock-fill absolute text-2xl top-[10%] text-greythirty"></i>
+              <div className="mb-6 flex gap-2 relative  ">
+                <i className="bi bi-lock-fill absolute text-2xl top-[10%] text-greythirty focus:text-primary"></i>
                 <input
                   onChange={onChangeForm}
                   name="password"
                   type={`${iconEye ? "text" : "password"}`}
-                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%]"
+                  className="w-full border-b-2 border-solid border-greySecondary p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary"
                   placeholder="Enter your password"
                 />
                 <i

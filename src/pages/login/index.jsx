@@ -17,7 +17,7 @@ import publicRoute from "utils/wrapper/publicRoute";
 
 function Login() {
   const router = useRouter();
-  const [input, setInput] = useState(true);
+  const [input, setInput] = useState();
   const [iconEye, setIconEye] = useState(false);
   const toggleIcon = () => {
     iconEye ? setIconEye(false) : setIconEye(true);
@@ -60,7 +60,7 @@ function Login() {
       .unwrap()
       .then((res) => {
         console.log(res);
-
+        setInput(true);
         dispatch(
           profileAction.getProfile({
             id: res.data.id,
@@ -78,6 +78,7 @@ function Login() {
       })
       .catch((error) => {
         // console.log(error);
+        setInput(false);
         return swal("Failed", error.response.data.msg, "error");
       });
   };
@@ -132,8 +133,8 @@ function Login() {
             >
               <div className="mb-8 flex gap-2 relative">
                 <i
-                  className={`bi bi-envelope text-2xl absolute top-[10%]  ${
-                    input ? "text-greythirty" : "text-error"
+                  className={`bi bi-envelope text-2xl absolute top-[10%] text-greythirty  ${
+                    input ? "text-primary" : "text-error"
                   }`}
                 ></i>
                 <input
@@ -143,14 +144,14 @@ function Login() {
                   onChange={onChangeForm}
                   placeholder="Enter your email"
                   className={`w-full border-b-2 border-solid border-greythirty  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary ${
-                    input ? "border-greythirty" : "border-error"
+                    input ? "border-primary" : "border-error"
                   }`}
                 />
               </div>
               <div className="mb-6 flex gap-2 relative ">
                 <i
-                  className={`bi bi-lock-fill absolute text-2xl top-[10%]  ${
-                    input ? "text-greythirty" : "text-error"
+                  className={`bi bi-lock-fill absolute text-2xl top-[10%] text-greythirty  ${
+                    input ? "text-primary" : "text-error"
                   }`}
                 ></i>
                 <input
@@ -158,8 +159,8 @@ function Login() {
                   id="password"
                   onChange={onChangeForm}
                   type={`${iconEye ? "text" : "password"}`}
-                  className={`w-full border-b-2 border-solid border-greythirty   p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary ${
-                    input ? "border-greythirty" : "border-error"
+                  className={`w-full border-b-2 border-solid border-greythirty   p-2 pl-10 focus:outline-none lg:w-[90%]  ${
+                    input ? "border-primary" : "border-error"
                   }`}
                   placeholder="Enter your password"
                 />
@@ -214,4 +215,4 @@ function Login() {
   );
 }
 
-export default publicRoute(Login);
+export default Login;

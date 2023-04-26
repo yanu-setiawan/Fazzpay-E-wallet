@@ -18,7 +18,7 @@ const publicRoute = (WrappedComponent) => {
       }
     }, [dataArray, router]);
 
-    if (!dataArray) {
+    if (!dataArray || dataArray === null) {
       return <WrappedComponent {...props} />;
     }
     return <Loader />;
