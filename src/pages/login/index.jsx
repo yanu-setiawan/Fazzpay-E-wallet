@@ -73,8 +73,9 @@ function Login() {
         const pin = res.data.pin;
         if (pin === null) {
           return router.push("/create-pin");
+        } else {
+          return router.push("/home");
         }
-        return router.push("/home");
       })
       .catch((error) => {
         // console.log(error);
