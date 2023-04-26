@@ -128,7 +128,7 @@ function UserId() {
               className=" mt-[3rem] xl:mt-[4rem] gap-[1rem] flex flex-col"
               onSubmit={confirmHandler}
             >
-              <div className="mb-6 flex gap-2 relative ">
+              <div className="mb-6 flex gap-2 relative text-greythirty ">
                 <i
                   className={`bi bi-lock-fill absolute text-2xl top-[10%] `}
                 ></i>
@@ -137,8 +137,8 @@ function UserId() {
                   id="newPassword"
                   onChange={onChangeForm}
                   type={`${iconEye1 ? "text" : "password"}`}
-                  className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] `}
-                  placeholder="Enter your password"
+                  className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
+                  placeholder="Create New Password"
                 />
                 <i
                   className={`right-2 text-[#A9A9A9] absolute text-2xl cursor-pointer top-[10%] lg:right-14 xl:right-16  ${
@@ -147,7 +147,7 @@ function UserId() {
                   onClick={toggleIcon1}
                 ></i>
               </div>
-              <div className="mb-6 flex gap-2 relative ">
+              <div className="mb-6 flex gap-2 relative text-greythirty">
                 <i
                   className={`bi bi-lock-fill absolute text-2xl top-[10%] `}
                 ></i>
@@ -156,8 +156,8 @@ function UserId() {
                   id="confirmPassword"
                   onChange={onChangeForm}
                   type={`${iconEye2 ? "text" : "password"}`}
-                  className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] `}
-                  placeholder="Enter your password"
+                  className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
+                  placeholder="Create New Password"
                 />
                 <i
                   className={`right-2 text-[#A9A9A9] absolute text-2xl cursor-pointer top-[10%] lg:right-14 xl:right-16  ${

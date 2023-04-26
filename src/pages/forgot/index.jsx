@@ -103,7 +103,7 @@ function Forgot() {
               </p>
             </div>
             <form className=" mt-[3rem] xl:mt-[4rem] gap-[1rem] flex flex-col">
-              <div className="mb-8 flex gap-2 relative">
+              <div className="mb-8 flex gap-2 relative text-greythirty">
                 <i
                   className={`bi bi-envelope text-2xl absolute top-[10%] `}
                 ></i>

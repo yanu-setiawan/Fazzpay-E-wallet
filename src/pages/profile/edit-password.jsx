@@ -103,7 +103,7 @@ function ChangePwd() {
                         setOldPass(event.target.value);
                       }}
                       type={`${iconEye1 ? "text" : "password"}`}
-                      className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%]`}
+                      className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary`}
                       placeholder="Current password"
                     />
                     <i
@@ -125,7 +125,7 @@ function ChangePwd() {
                         setNewPass(event.target.value);
                       }}
                       type={`${iconEye2 ? "text" : "password"}`}
-                      className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] `}
+                      className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary `}
                       placeholder="New password"
                     />
                     <i
@@ -147,7 +147,7 @@ function ChangePwd() {
                         setConfirmPass(event.target.value);
                       }}
                       type={`${iconEye3 ? "text" : "password"}`}
-                      className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] `}
+                      className={`w-full border-b-2 border-solid  p-2 pl-10 focus:outline-none lg:w-[90%] focus:border-primary`}
                       placeholder="Repeat New password"
                     />
                     <i
