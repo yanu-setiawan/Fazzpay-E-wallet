@@ -10,7 +10,7 @@
   <h2 align="center">FAZZPAY E-WALLET</h2>
 
   <p align="center">
-    <a href="https://fazzpay-next-js.vercel.app/">View Demo</a>
+    <a href="https://fazzpay-e-wallet.vercel.app/">View Demo</a>
     ·
     <a href="#">Report Bug</a>
     ·
@@ -96,7 +96,7 @@ You may also see any lint errors in the console.
 
 ## Deployment
 
-[Vercel deploy link](https://fazz-pay.vercel.app/)
+[Vercel deploy link](fazzpay-e-wallet-67oyyxyfr-yanu-setiawan.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
