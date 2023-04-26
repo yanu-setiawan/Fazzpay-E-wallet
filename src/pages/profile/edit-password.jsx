@@ -30,7 +30,7 @@ function ChangePwd() {
     iconEye3 ? setIconEye3(false) : setIconEye3(true);
   };
   const controller = useMemo(() => new AbortController(), []);
-  const userState = useSelector((state) => state.auth.data.data);
+  const userState = useSelector((state) => state.auth.data);
   // console.log(userState.token);
 
   const [oldPassword, setOldPass] = useState("");

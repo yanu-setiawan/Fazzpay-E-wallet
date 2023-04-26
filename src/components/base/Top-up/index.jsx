@@ -9,7 +9,7 @@ import { topUp } from "utils/https/user";
 
 function Topup({ modal, setModal }) {
   const controller = useMemo(() => new AbortController(), []);
-  const token = useSelector((state) => state.auth.data.data.token);
+  const token = useSelector((state) => state.auth.data.token);
   const [isLoading, setLoading] = useState(false);
   const [isSuccess, setSuccess] = useState(false);
   const [isInvalid, setInvalid] = useState(false);

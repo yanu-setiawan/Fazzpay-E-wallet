@@ -28,8 +28,8 @@ function Profile() {
   const [loading, setLoading] = useState(false);
   const stateUser = useSelector((state) => state.profile);
   const dataUser = useSelector((state) => state.profile.data.data);
-  const id = useSelector((state) => state.auth.data.data.id);
-  const token = useSelector((state) => state.auth.data.data.token);
+  const id = useSelector((state) => state.auth.data.id);
+  const token = useSelector((state) => state.auth.data.token);
   const [isOpen, setIsOpen] = useState(false);
   const linkCloud =
     "https://res.cloudinary.com/dd1uwz8eu/image/upload/v1666604839/";
@@ -70,7 +70,6 @@ function Profile() {
     updateImage(formData, id, token, controller)
       .then((res) => {
         // dispatch(profileAction.getProfileThunk({ id, token, controller }));
-        setProfileUpdate("");
         toast.success(res.msg);
         setIsUpdate(false);
         setUpdateRes(res);
@@ -86,7 +85,10 @@ function Profile() {
   useEffect(() => {
     setLoading(true);
     dispatch(profileAction.getProfile({ id, token, controller }))
-      .then()
+      .then((res) => {
+        console.log("ppppp", res);
+        // setProfileUpdate("");
+      })
       .catch()
       .finally(() => {
         setLoading(false);

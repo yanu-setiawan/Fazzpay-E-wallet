@@ -23,7 +23,7 @@ function Transfer() {
   const [datas, setDatas] = useState([]);
   const [page, setPage] = useState(1);
   const [paginations, setPagination] = useState();
-  const token = useSelector((state) => state.auth.data.data.token);
+  const token = useSelector((state) => state.auth.data.token);
   const linkCloud =
     "https://res.cloudinary.com/dd1uwz8eu/image/upload/v1666604839/";
 

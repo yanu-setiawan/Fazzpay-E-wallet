@@ -16,7 +16,7 @@ import privateRoute from "utils/wrapper/private";
 function History() {
   const router = useRouter();
   const controller = useMemo(() => new AbortController(), []);
-  const token = useSelector((state) => state.auth.data.data.token);
+  const token = useSelector((state) => state.auth.data.token);
   const [isLoading, setLoading] = useState(true);
   const [metaPage, setMetaPage] = useState(1);
   const [sort, setSort] = useState("");

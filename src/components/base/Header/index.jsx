@@ -101,9 +101,9 @@ function Header() {
           <div className=" w-[3.3rem] h-[3.3rem] rounded-[0.68rem] overflow-hidden">
             <Image
               src={
-                dataUser.image === null
+                dataUser?.image === null
                   ? `${linkCloud}Fazzpay/example_qx2pf0.png`
-                  : `${linkCloud}${dataUser.image}`
+                  : `${linkCloud}${dataUser?.image}`
               }
               width={52.8}
               height={52.8}
@@ -114,11 +114,11 @@ function Header() {
           <div className=" hidden lg:flex flex-col justify-center gap-1">
             <div className=" text-lg font-bold text-dark">
               <p>
-                {dataUser.firstName} {dataUser.lastName || ""}
+                {dataUser?.firstName} {dataUser?.lastName || ""}
               </p>
             </div>
             <div className=" text-sm text-dark">
-              <p>{dataUser.noTelp || "Phone number has not been added"}</p>
+              <p>{dataUser?.noTelp || "Phone number has not been added"}</p>
             </div>
           </div>
           <div className=" flex lg:hidden flex-col justify-center gap-1 ">
@@ -128,7 +128,7 @@ function Header() {
             <div className=" text-sm text-white lg:text-dark">
               <p>
                 {" "}
-                {dataUser.firstName} {dataUser.lastName || ""}
+                {dataUser?.firstName} {dataUser?.lastName || ""}
               </p>
             </div>
           </div>

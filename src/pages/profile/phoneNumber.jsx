@@ -19,7 +19,7 @@ function PhoneNumber() {
   const dispatch = useDispatch();
   const controller = useMemo(() => new AbortController(), []);
   const dataUser = useSelector((state) => state.profile.data.data);
-  const stateUser = useSelector((state) => state.auth.data.data);
+  const stateUser = useSelector((state) => state.auth.data);
   // console.log(stateUser);
   const [isLoading, setLoading] = useState(false);
   const [phoneValue, setPhoneVal] = useState(dataUser.noTelp);

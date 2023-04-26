@@ -34,7 +34,7 @@ function Confirmation() {
   const valuePin = (e) => (setInput(true), setGetPin(`${e}`));
   const transactions = useSelector((state) => state.transactions.data);
   const profileUser = useSelector((state) => state.profile.data.data);
-  const token = useSelector((state) => state.auth.data.data.token);
+  const token = useSelector((state) => state.auth.data.token);
 
   const transferHandler = (e) => {
     e.preventDefault();

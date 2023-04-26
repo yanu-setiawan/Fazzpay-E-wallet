@@ -43,8 +43,9 @@ function Home() {
   const [loadingHistory, setLoadingHistory] = useState(false);
   // const [topUpSucces, setTopUpSucces] = useState(1);
   const [histories, setHistories] = useState([]);
-  const token = useSelector((state) => state.auth.data.data.token);
-  const id = useSelector((state) => state.auth.data.data.id);
+  // const token = useSelector((state) => state.auth.data.token);
+  // const id = useSelector((state) => state.auth.data.id);
+  const { id, token } = useSelector((state) => state.auth.data);
   const dataUser = useSelector((state) => state.profile.data.data);
   const [modal, setModal] = useState(false);
 
@@ -165,10 +166,10 @@ function Home() {
                     <p>Balance</p>
                   </div>
                   <div className=" font-bold text-[2.5rem] text-white">
-                    <p>{rupiah(dataUser.balance) || "Rp. 0"}</p>
+                    <p>{rupiah(dataUser?.balance) || "Rp. 0"}</p>
                   </div>
                   <div className=" text-[#E0E0E0] text-base ">
-                    <p>{dataUser.noTelp || "Phone Number required"}</p>
+                    <p>{dataUser?.noTelp || "Phone Number required"}</p>
                   </div>
                 </div>
                 <div className=" md:flex flex-col md:gap-8 lg:gap-4 hidden">

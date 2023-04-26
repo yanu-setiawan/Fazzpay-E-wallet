@@ -11,7 +11,7 @@ function Logout({ isOpen, setIsOpen }) {
   const router = useRouter();
   const dispatch = useDispatch();
   const controller = useMemo(() => new AbortController(), []);
-  const token = useSelector((state) => state.auth.data.data.token);
+  const token = useSelector((state) => state.auth.data.token);
   const [isLoading, setLoading] = useState(false);
 
   const handleLogout = async () => {

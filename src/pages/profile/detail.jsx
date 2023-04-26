@@ -26,8 +26,8 @@ function Detail() {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const [edit, setEdit] = useState(true);
-  const token = useSelector((state) => state.auth.data.data.token);
-  const id = useSelector((state) => state.auth.data.data.id);
+  const token = useSelector((state) => state.auth.data.token);
+  const id = useSelector((state) => state.auth.data.id);
   const controller = useMemo(() => new AbortController(), []);
   const dispatch = useDispatch();
 

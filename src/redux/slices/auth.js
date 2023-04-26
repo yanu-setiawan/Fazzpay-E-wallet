@@ -32,9 +32,7 @@ const authSlice = createSlice({
   initialState,
   reducers: {
     logoutRedux: () => {
-      return {
-        initialState,
-      };
+      return initialState;
     },
   },
   extraReducers: (builder) => {
@@ -52,7 +50,9 @@ const authSlice = createSlice({
           ...prevState,
           isLoading: false,
           isFulfilled: true,
-          data: action.payload,
+          data: action.payload.data,
+          msg: action.payload.msg,
+          status: action.payload.status,
         };
       })
       .addCase(doLogin.rejected, (prevState, action) => {

@@ -21,7 +21,7 @@ import { transactionActions } from "redux/slices/transactions";
 function Transfer() {
   const router = useRouter();
   const controller = useMemo(() => new AbortController(), []);
-  const token = useSelector((state) => state.auth.data.data.token);
+  const token = useSelector((state) => state.auth.data.token);
   const linkCloud =
     "https://res.cloudinary.com/dd1uwz8eu/image/upload/v1666604839/";
 
