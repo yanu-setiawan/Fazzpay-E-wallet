@@ -70,12 +70,15 @@ function Profile() {
     updateImage(formData, id, token, controller)
       .then((res) => {
         // dispatch(profileAction.getProfileThunk({ id, token, controller }));
-        toast.success(res.msg);
+        // toast.success(res.msg);
+        swal("Success", "Update Success", "success");
         setIsUpdate(false);
         setUpdateRes(res);
       })
       .catch((err) => {
         console.log(err);
+        setLoading(false);
+        return swal("Failed", err.response.data.msg, "error");
       })
       .finally(() => {
         setLoading(false);
