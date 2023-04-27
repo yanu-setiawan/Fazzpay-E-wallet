@@ -122,7 +122,7 @@ function CreatePin() {
               <div className="flex justify-center items-center gap-2 w-full ">
                 <div className=" flex justify-center items-center px-[auto]">
                   <ReactCodeInput
-                    type="password"
+                    type="number"
                     fields={6}
                     pattern="/^-?\d+\.?\d*$/"
                     onChange={valuePin}

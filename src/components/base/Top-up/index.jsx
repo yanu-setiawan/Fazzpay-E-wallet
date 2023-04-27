@@ -41,6 +41,9 @@ function Topup({ modal, setModal }) {
       }
     } catch (error) {
       console.log(error);
+      setLoading(false);
+
+      return swal("Failed", "Please manage phone number ", "error");
     }
   };
 
