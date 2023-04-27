@@ -7,6 +7,8 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { getHistory } from "utils/https/history";
+import Topup from "../Top-up";
+import Logout from "../LogoutModal";
 
 function Header() {
   const dataUser = useSelector((state) => state.profile.data.data);
@@ -17,6 +19,14 @@ function Header() {
   const toggleSidebar = (e) => {
     e.preventDefault();
     setSideBar(!sidebar);
+  };
+  const [modal, setModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const handleTopup = () => {
+    setModal(true);
+  };
+  const handleLogout = () => {
+    setIsOpen(true);
   };
   const handleNotif = () => {
     if (notif) {
@@ -47,6 +57,8 @@ function Header() {
   }, []);
   return (
     <>
+      {modal && <Topup modal={modal} setModal={setModal} />}
+      {isOpen && <Logout isOpen={isOpen} setIsOpen={setIsOpen} />}
       <section className=" w-full flex flex-col z-[999]">
         <div
           className={`fixed h-screen w-full delay-200 bg-black bg-opacity-40 z-10 side-bar ${
@@ -81,17 +93,14 @@ function Header() {
             <i className="bi bi-arrow-up"></i>
             <p>Transfer</p>
           </Link>
-          <Link
-            href={"/topup"}
-            className={`flex pl-[10%] gap-4 text-lg text-greySecondary hover:border-l-4 hover:border-solid hover:border-primary hover:text-primary hover:font-bold ${
-              router.pathname === "/topup"
-                ? "border-l-4 border-solid border-blue-600 text-primary font-bold"
-                : "text-greySecondary font-bold"
-            }`}
+          <div
+            // href={"/topup"}
+            onClick={handleTopup}
+            className={`flex pl-[10%] gap-4 text-lg font-bold text-greySecondary hover:border-l-4 hover:border-solid hover:border-primary hover:text-primary hover:font-bold `}
           >
             <i className="bi bi-plus-circle "></i>
             <p>Top Up</p>
-          </Link>
+          </div>
           <Link
             href={"/profile"}
             className={`flex pl-[10%] gap-4 text-lg text-dark hover:border-l-4 hover:border-solid hover:border-primary hover:text-primary hover:font-bold ${
@@ -103,13 +112,14 @@ function Header() {
             <i className="bi bi-person-plus-fill "></i>
             <p>Profile</p>
           </Link>
-          <Link
-            href={"/logout"}
+          <div
+            // href={"/logout"}
+            onClick={handleLogout}
             className={`flex pl-[10%] gap-4 text-lg text-dark text-greySecondary font-bold absolute bottom-0 mb-12 hover:border-l-4 hover:border-solid hover:border-primary hover:text-primary hover:font-bold`}
           >
             <i className="bi bi-box-arrow-right"></i>
             <p>Logout</p>
-          </Link>
+          </div>
         </div>
       </section>
       <section className=" relative z-[9] flex w-full justify-between flex-col md:flex-row items-center pt-3 md:pt-7 pb-12 bg-primary lg:bg-white  md:px-[3.4rem] xl:px-[9.4rem] rounded-b-2xl drop-shadow-lg">
