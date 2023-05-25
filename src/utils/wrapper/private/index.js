@@ -6,7 +6,6 @@ import Loader from "components/base/Loader";
 const privateRoute = (WrappedComponent) => {
   const Auth = (props) => {
     const data = useSelector((state) => state.auth.data.token);
-    // console.log(data);
     const router = useRouter();
     useEffect(() => {
       if (!data) {

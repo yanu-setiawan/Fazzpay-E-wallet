@@ -26,6 +26,7 @@ function Profile() {
   const [isUpdate, setIsUpdate] = useState(false);
   const [updateRes, setUpdateRes] = useState();
   const [loading, setLoading] = useState(false);
+
   const stateUser = useSelector((state) => state.profile);
   const dataUser = useSelector((state) => state.profile.data.data);
   const id = useSelector((state) => state.auth.data.id);
@@ -33,6 +34,7 @@ function Profile() {
   const [isOpen, setIsOpen] = useState(false);
   const linkCloud =
     "https://res.cloudinary.com/dd1uwz8eu/image/upload/v1666604839/";
+
   const inputImage = () => {
     setIsUpdate(true);
     inputFileRef.current.click();

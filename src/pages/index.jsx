@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
 import Image from "next/image";
@@ -20,7 +21,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Title from "utils/wrapper/title";
 
-function LandingPage() {
+export default function LandingPage({ data }) {
   const router = useRouter();
 
   return (
@@ -231,26 +232,27 @@ function LandingPage() {
             </section>
 
             <section className=" mt-16 flex overflow-scroll  overflow-y-hidden lg:overflow-auto gap-10 xl:gap-6 items-center  xl:justify-around py-16 ">
-              <div className=" flex">
-                <div className=" flex flex-col gap-[2.2rem] w-[20.9rem] h-[19.5rem] lg:w-[22.938rem] lg:h-[21.5rem] rounded-[1.3rem]  text-center justify-center items-centers px-8 py-11 bg-white  drop-shadow-lg ">
-                  <div className=" flex flex-col gap-[2.2rem] justify-center items-center ">
-                    <div className=" w-[3.8rem]  h-[3.8rem]  flex justify-center items-center">
-                      <Image src={pp} alt="call" />
-                    </div>
-                    <div className=" text-lg lg:text-2xl flex flex-wrap text-dark font-bold">
-                      <p>Sherina Chaw</p>
+              {data.map((data, idx) => {
+                return (
+                  <div className=" flex" key={idx}>
+                    <div className=" flex flex-col gap-[2.2rem] w-[20.9rem] h-[19.5rem] lg:w-[22.938rem] lg:h-[21.5rem] rounded-[1.3rem]  text-center justify-center items-centers px-8 py-11 bg-white  drop-shadow-lg ">
+                      <div className=" flex flex-col gap-[2.2rem] justify-center items-center ">
+                        <div className=" w-[3.8rem]  h-[3.8rem]  flex justify-center items-center">
+                          <Image src={data.image} alt="call" />
+                        </div>
+                        <div className=" text-lg lg:text-2xl flex flex-wrap text-dark font-bold">
+                          <p>{data.name}</p>
+                        </div>
+                      </div>
+                      <div className=" text-base lg:text-lg leading-8 flex flex-wrap text-dark">
+                        <p>{data.comment}</p>
+                      </div>
                     </div>
                   </div>
-                  <div className=" text-base lg:text-lg leading-8 flex flex-wrap text-dark">
-                    <p>
-                      “I use this app since 2 years ago and this is the best app
-                      that I’ve ever use in my entire life”
-                    </p>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
 
-              <div className=" flex">
+              {/* <div className=" flex">
                 <div className=" flex flex-col gap-[2.2rem] w-[20.9rem] h-[19.5rem] lg:w-[22.938rem] lg:h-[21.5rem] rounded-[1.3rem]  text-center justify-center items-centers px-8 py-11 bg-white  drop-shadow-lg ">
                   <div className=" flex flex-col gap-[2.2rem] justify-center items-center ">
                     <div className=" w-[3.8rem]  h-[3.8rem]  flex justify-center items-center">
@@ -267,9 +269,9 @@ function LandingPage() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className=" flex">
+              {/* <div className=" flex">
                 <div className=" flex flex-col gap-[2.2rem] w-[20.9rem] h-[19.5rem] lg:w-[22.938rem] lg:h-[21.5rem] rounded-[1.3rem]  text-center justify-center items-centers px-8 py-11 bg-white  drop-shadow-lg ">
                   <div className=" flex flex-col gap-[2.2rem] justify-center items-center ">
                     <div className=" w-[3.8rem]  h-[3.8rem]  flex justify-center items-center">
@@ -286,7 +288,7 @@ function LandingPage() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </section>
           </section>
           <section className=" flex flex-col bg-primary py-20 w-full px-[10%] lg:px-[8%] xl:px-[10%]">
@@ -322,4 +324,31 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export async function getStaticProps() {
+  const data = [
+    {
+      name: "Sherina Chaw",
+      comment:
+        "“This is the most outstanding app that I’ve ever try in my live I’ve ever use in my entire life”",
+      image: pp,
+    },
+    {
+      name: "Jessica Mera",
+      comment:
+        "“I use Zwallet to manage all financial needs. It’s super easy to use and it’s 100% free app”",
+      image: pp2,
+    },
+    {
+      name: "Robert Chandler",
+      comment:
+        "“Since I’m using this app, I’m not going to move to another similar app. Thank you Zwallet!”",
+      image: pp3,
+    },
+  ];
+
+  return {
+    props: { data },
+  };
+}
+
+// export default LandingPage;

@@ -71,6 +71,15 @@ function Login() {
 
         // console.log(profileAction);
         const pin = res.data.pin;
+        //   setTimeout(() => {
+        //     if (pin === null) {
+        //       return router.push("/create-pin");
+        //     } else {
+        //       return router.push("/home");
+        //     }
+        //   }, 2000);
+        // })
+
         if (pin === null) {
           return router.push("/create-pin");
         } else {

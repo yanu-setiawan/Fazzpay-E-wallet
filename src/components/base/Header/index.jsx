@@ -176,7 +176,7 @@ function Header() {
             <i className="bi bi-bell"></i>
           </div>
           <div
-            className={`h-[612px] w-[403px] bg-white rounded-[20px] pb-7  mt-[7rem] drop-shadow-2xl justify-end flex flex-col ml-auto absolute z-[60] ${
+            className={`h-auto w-[403px] bg-white rounded-[20px] pb-7  mt-[7rem] drop-shadow-2xl justify-end flex flex-col ml-auto absolute z-[60] ${
               notif ? " right-[40px] xl:right-[150px]" : "hidden"
             } `}
           >

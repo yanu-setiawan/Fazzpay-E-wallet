@@ -45,7 +45,6 @@ function Register() {
     setIsLoading(true);
     if (!form.email || !form.password || !form.firstName || !form.lastName) {
       setIsLoading(false);
-
       return setInput(false), toast.error("Data is Required!");
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

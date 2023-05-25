@@ -43,7 +43,7 @@ function Topup({ modal, setModal }) {
       console.log(error);
       setLoading(false);
 
-      return swal("Failed", "Please manage phone number ", "error");
+      return swal("Failed", "Please set phone number first ", "error");
     }
   };
 

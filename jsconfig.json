@@ -3,7 +3,7 @@
     "paths": {
       "*": ["src/*"]
     },
-    "baseUrl": "." // absolute import
+    "baseUrl": "."
   }
   
 }

@@ -72,11 +72,11 @@ $ npm install
 Configure .env file by create file named .env inside project folder and add this line to the file:
 
 ```
-NEXT_PUBLIC_BACKEND_URL = "https://fazzpay-rose.vercel.app"
+NEXT_PUBLIC_BACKEND_URL = "https://example.com"
 
-NEXT_PUBLIC_URL_PAGE = "https://fazzpay-rose.vercel.app"
+NEXT_PUBLIC_URL_PAGE = "https://example.com"
 
-NEXT_PUBLIC_IMAGE = "https://res.cloudinary.com/dd1uwz8eu/image/upload/v1666604839/"
+NEXT_PUBLIC_IMAGE = "https://example.com"
 
 ```
 
