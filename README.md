@@ -24,7 +24,7 @@
 
 <!-- ![Product Name Screen Shot][product-screenshot] -->
 
-FazzPay is a cutting-edge digital wallet application that revolutionizes the way people make payments, transfers, and manage their finances. Designed with user convenience and security in mind, FazzPay offers a seamless and hassle-free experience
+FazzPay is an e-wallet application that allows users to make digital payments quickly and easily. With FazzPay, users can link their bank accounts or credit/debit cards to the app, allowing them to securely store and manage their payment methods in one place.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
