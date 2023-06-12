@@ -8,6 +8,8 @@
   </a>
 
   <h2 align="center">FAZZPAY E-WALLET</h2>
+  
+
 
   <p align="center">
     <a href="https://fazzpay-e-wallet.vercel.app/">View Demo</a>
@@ -18,7 +20,15 @@
   </p>
 </div>
 
-## Built With
+## About The Project
+
+<!-- ![Product Name Screen Shot][product-screenshot] -->
+
+FazzPay is a cutting-edge digital wallet application that revolutionizes the way people make payments, transfers, and manage their finances. Designed with user convenience and security in mind, FazzPay offers a seamless and hassle-free experience
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ## Built With
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -26,7 +36,14 @@
   </a>
 </p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+### Built With
+
+- [![Next][Next.js]][Next-url]
+- [![React][React.js]][React-url]
+- [![Tailwind][Tailwind-CSS]][Tailwind-url]
+- [![Redux][Redux]][Redux-url]
 
 ## Contents
 
@@ -121,10 +138,12 @@ You may also see any lint errors in the console.
 
 ## Documentation
 
-<img width="500" src="./src/assets/Readme/1.png" alt="Landing page">
-<img width="500" src="./src/assets/Readme/2.png" alt="Landing page">
-<img width="500" src="./src/assets/Readme/3.png" alt="Landing page">
-<img width="500" src="./src/assets/Readme/4.png" alt="Landing page">
+<p align="center">
+<img width="285" src="./src/assets/Readme/1.png" alt="Landing page">
+<img width="285" src="./src/assets/Readme/2.png" alt="Landing page">
+<img width="285" src="./src/assets/Readme/3.png" alt="Landing page">
+<img width="285" src="./src/assets/Readme/4.png" alt="Landing page">
+</p>
 
 
 <p align="center"> <samp><i>&copy; yanusetiawan </i></samp> </p>
