@@ -138,11 +138,11 @@ You may also see any lint errors in the console.
 
 ## Documentation
 
-<p align="center">
-<img width="285" src="./src/assets/Readme/1.png" alt="Landing page">
-<img width="285" src="./src/assets/Readme/2.png" alt="Landing page">
-<img width="285" src="./src/assets/Readme/3.png" alt="Landing page">
-<img width="285" src="./src/assets/Readme/4.png" alt="Landing page">
+<p align="center" style="gap:2%">
+<img width="310" src="./src/assets/Readme/1.png" alt="Landing page">
+<img width="310" src="./src/assets/Readme/2.png" alt="Landing page">
+<img width="310" src="./src/assets/Readme/3.png" alt="Landing page">
+<img width="310" src="./src/assets/Readme/4.png" alt="Landing page">
 </p>
 
 
