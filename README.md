@@ -20,6 +20,18 @@
   </p>
 </div>
 
+## Contents
+
+- [About](#about)
+- [Build With](#build-with)
+- [Features](#features)
+- [Run Application](#how-to-run-the-application)
+- [Deployment](#deployment)
+- [Related Projects](#related-projects)
+- [Contributors](#contributors)
+- [License](#license)
+- [Report Bug](#report-bug)
+
 ## About The Project
 
 <!-- ![Product Name Screen Shot][product-screenshot] -->
@@ -28,15 +40,6 @@ FazzPay is an e-wallet application that allows users to make digital payments qu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## Built With
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,javascript,html,css,redux,tailwind,vercel,next" />
-  </a>
-</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 ### Built With
 
@@ -45,13 +48,7 @@ FazzPay is an e-wallet application that allows users to make digital payments qu
 - [![Tailwind][Tailwind-CSS]][Tailwind-url]
 - [![Redux][Redux]][Redux-url]
 
-## Contents
 
-- [Features](#features)
-- [Run Application](#how-to-run-the-application)
-- [Deployment](#deployment)
-- [Related Projects](#related-projects)
-- [Contributors](#contributors)
 
 ## Features
 
@@ -145,6 +142,14 @@ You may also see any lint errors in the console.
 <img width="310" src="./src/assets/Readme/4.png" alt="Landing page">
 </p>
 
+## License
+
+This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
+
+## Report Bug
+
+Any error report you can pull request
+or contact: <yanusetiawan363@gmail.com>
 
 <p align="center"> <samp><i>&copy; yanusetiawan </i></samp> </p>
 
