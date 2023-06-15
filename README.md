@@ -127,11 +127,6 @@ You may also see any lint errors in the console.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Deployment
-
-[Vercel deploy Link](https://fazzpay-next-js.vercel.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Documentation
 
