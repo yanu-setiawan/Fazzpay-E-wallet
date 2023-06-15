@@ -28,7 +28,6 @@
 - [Run Application](#how-to-run-the-application)
 - [Deployment](#deployment)
 - [Related Projects](#related-projects)
-- [Contributors](#contributors)
 - [License](#license)
 - [Report Bug](#report-bug)
 
