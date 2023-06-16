@@ -109,7 +109,7 @@ You may also see any lint errors in the console.
 
 ## Deployment
 
-[Vercel deploy link](fazzpay-e-wallet-67oyyxyfr-yanu-setiawan.vercel.app)
+Link : [Click Here](https://fazzpay-e-wallet.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
